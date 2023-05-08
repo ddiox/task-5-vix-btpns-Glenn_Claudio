@@ -79,7 +79,9 @@ Photos Endpoint
     
     Pastikan hanya user yang membuat foto yang dapat menghapus / mengubah foto
     
+    
 - Environment
+
 
 Struktur dokumen / environment dari GoLang yang akan dibentuk kurang lebih sebagai berikut :
 
@@ -98,8 +100,10 @@ Struktur dokumen / environment dari GoLang yang akan dibentuk kurang lebih sebag
     router : Berisi konfigurasi routing / endpoint yang akan digunakan untuk mengakses api
     
     go mod : Yang digunakan untuk manajemen package / dependency berupa library
+    
 
 - Tools :
+
 
 Tools yang dapat kalian gunakan : 
 
