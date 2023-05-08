@@ -21,3 +21,56 @@ d. User dapat menghapus gambar yang telah di post
 
 e. User yang berbeda tidak dapat menghapus / mengubah foto yang telah di
 buat oleh user lain
+
+- Ketentuan API :
+
+Pada bagian User Endpoint :
+
+    POST : /users/register, dan gunakan atribut berikut ini
+    
+    ID (primary key, required)
+    
+    Username (required)
+    
+    Email (unique & required) 
+    
+    Password (required & minlength 6)
+    
+    Relasi dengan model Photo (Gunakan constraint cascade)
+    
+    Created At (timestamp)
+    
+    Updated At (timestamp)
+    
+    GET: /users/login
+    
+    Using email & password (required
+    
+    PUT : /users/:userId (Update User)
+    
+    DELETE : /users/:userId (Delete User)
+
+Photos Endpoint
+
+    POST : /photos 
+    
+    ID
+    
+    Title
+    
+    Caption
+    
+    PhotoUrl
+    
+    UserID
+    
+    Relasi dengan model User
+    
+    GET : /photos
+    
+    PUT : /photoId
+    
+    DELETE : /:photoId
+
+
+
